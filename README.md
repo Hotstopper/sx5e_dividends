@@ -4,7 +4,7 @@ Forecasting EUROSTOXX 50 dividends per share (DPS) using both traditional time-s
 The project compares a classical **ARIMA** model against a **hybrid residual-learning XGBoost** model trained on firm-level financial fundamentals, with a discussion on implications for EMH.
 
 ## Repository Structure
-
+```
 sx5e_dividends/
 ├── results/
 │   ├── arima_evaluation_metrics.csv/   # Evaluation metrics of ARIMA model forecasts
@@ -21,6 +21,7 @@ sx5e_dividends/
 |
 ├── .gitignore                          # Ignored files
 └── README.md                           # Project overview and instructions
+```
 
 ## Data
 **`dividends_data.csv`**  

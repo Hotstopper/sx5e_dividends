@@ -43,9 +43,7 @@ Contains firm-level accounting and market variables (EPS, FCF per share, revenue
 ### **XGBoost Hybrid Model (`model.ipynb`)**
 
 - Implements a **residual-learning hybrid**:
-  `$$
-  \hat{y} = a\,F + b\,\hat{r}, \quad \hat{r} = f_{\text{XGB}}(X_{\setminus F})
-  $$`
+  $ \hat{y} = a\,F + b\,\hat{r}, \quad \hat{r} = f_{\text{XGB}}(X_{\setminus F}) $
   where $F$ is the dividend-futures baseline and $f_{\text{XGB}}\$ learns deviations using firm-level fundamentals.
 - Trains on data up to 2022 and tests on 2023–2024.  
 - Produces out-of-fold residual predictions to avoid leakage and fits optimal combination weights $a ,b$ based on quantile regression.  
